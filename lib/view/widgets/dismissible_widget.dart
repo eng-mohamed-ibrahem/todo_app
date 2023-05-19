@@ -17,7 +17,8 @@ class DismissbleWidget extends StatelessWidget {
       onDismissed: onDismissed,
       direction: DismissDirection.horizontal,
       dismissThresholds: const <DismissDirection, double>{
-        DismissDirection.horizontal: 0.25,
+        DismissDirection.endToStart: 0.25,
+        DismissDirection.startToEnd: 0.25,
       },
       secondaryBackground: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
