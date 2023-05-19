@@ -9,10 +9,16 @@ class BottomNavigationBarWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     return BottomNavigationBar(
+      selectedFontSize: 15,
+      selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
       currentIndex: ref.watch(tapIndexProvider),
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            label: "Home", icon: Icon(Icons.list_alt_outlined)),
+          label: "Home",
+          icon: Icon(
+            Icons.list_alt_outlined,
+          ),
+        ),
         BottomNavigationBarItem(
             label: "Completed", icon: Icon(FontAwesomeIcons.squareCheck))
       ],
