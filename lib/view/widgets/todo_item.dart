@@ -15,7 +15,9 @@ class TodoItemWidget extends ConsumerWidget {
       ),
       margin: const EdgeInsets.only(bottom: 10),
       child: ListTile(
-        leading: const SizedBox(width: 10,),
+        leading: const SizedBox(
+          width: 10,
+        ),
         minLeadingWidth: 10,
         contentPadding: const EdgeInsets.all(5),
         title: Text(todoModel.content),

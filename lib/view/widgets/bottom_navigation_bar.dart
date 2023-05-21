@@ -14,7 +14,7 @@ class BottomNavigationBarWidget extends ConsumerWidget {
       currentIndex: ref.watch(tapIndexProvider),
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          label: "Home",
+          label: "Todo",
           icon: Icon(
             Icons.list_alt_outlined,
           ),
