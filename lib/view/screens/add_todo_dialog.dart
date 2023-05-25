@@ -3,7 +3,6 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../controller/provider/todo_list_provider.dart';
 import '../../controller/util/constants/scroll_controller.dart';
-import '../../controller/util/methods/methods.dart';
 import '../../model/todo_model.dart';
 
 class AddTodoDialog extends HookConsumerWidget {
@@ -48,9 +47,6 @@ class AddTodoDialog extends HookConsumerWidget {
                         id: ref.read(todoProvider).length,
                       ),
                     );
-
-                /// force rebuild
-                forceRebuild(ref: ref);
 
                 // return to home page
                 Navigator.pop(context);

@@ -12,7 +12,7 @@ void removeTodoItemFromHomeList(
       .read(todoProvider.notifier)
       .removeTodoItem(ref.watch(todoProvider)[index])
       .whenComplete(() {
-    forceRebuild(ref: ref);
+    // forceRebuild(ref: ref);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         duration: const Duration(milliseconds: 300),

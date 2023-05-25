@@ -14,6 +14,7 @@ class _TodoStateNotifier extends StateNotifier<List<TodoModel>> {
     state.add(todo);
     saveToShared();
     log(state.toString());
+    state = [...state];
   }
 
   /// calling in splash screen
@@ -33,6 +34,7 @@ class _TodoStateNotifier extends StateNotifier<List<TodoModel>> {
   Future removeTodoItem(TodoModel todo) async {
     state.remove(todo);
     saveToShared();
+    state = [...state];
   }
 
   updateShared() async {
